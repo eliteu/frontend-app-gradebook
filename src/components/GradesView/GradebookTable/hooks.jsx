@@ -42,9 +42,9 @@ export const useGradebookTableData = () => {
     [Headings.email]: (<Fields.Text value={entry.email} />),
     [Headings.fullName]: (<Fields.Text value={entry.full_name} />),
     [Headings.totalGrade]: `${roundGrade(entry.percent * 100)}${getLocalizedPercentSign()}`,
-    ...entry.section_breakdown.reduce((acc, subsection,index) => ({
+    ...entry.section_breakdown.reduce((acc, subsection, index) => ({
       ...acc,
-      [subsection.label]: <GradeButton {...{ entry, subsection }} />,
+      [`${subsection.category} ${index + 1}: ${subsection.subsection_name}`]: <GradeButton {...{ entry, subsection }} />,
     }), {}),
   });
 
