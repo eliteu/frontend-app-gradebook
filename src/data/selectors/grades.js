@@ -111,8 +111,7 @@ export const headingMapper = (category, label = 'All') => {
     email,
     totalGrade,
   } = Headings;
-  const filteredLabels = (entry) => entry.filter(filter).map((s, index) => `${s.assignment_type} ${index + 1}: ${s.subsection_name}`);
-
+  const filteredLabels = (entry) => entry.filter(filter).map((s, index) => `${s.category} ${index + 1}: ${s.subsection_name}`);
   return (entry) => (
     entry
       ? [username, fullName, email, ...filteredLabels(entry), totalGrade]
