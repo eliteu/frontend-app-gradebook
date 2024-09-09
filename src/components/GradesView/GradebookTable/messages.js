@@ -11,6 +11,11 @@ const messages = defineMessages({
     defaultMessage: 'Email',
     description: 'Gradebook table email column header',
   },
+  lastUpdatedHeading: {
+    id: 'gradebook.GradesView.table.headings.lastUpdated',
+    defaultMessage: 'Last Updated',
+    description: 'Last Updated Time',
+  },
   totalGradeHeading: {
     id: 'gradebook.GradesView.table.headings.totalGrade',
     defaultMessage: 'Total Grade (%)',

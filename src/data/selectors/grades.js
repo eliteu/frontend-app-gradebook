@@ -109,12 +109,13 @@ export const headingMapper = (category, label = 'All') => {
     username,
     fullName,
     email,
+    lastUpdated,
     totalGrade,
   } = Headings;
   const filteredLabels = (entry) => entry.filter(filter).map((s, index) => s.subsection_name);
   return (entry) => (
     entry
-      ? [username, fullName, email, ...filteredLabels(entry), totalGrade]
+      ? [username, fullName, email, lastUpdated, ...filteredLabels(entry), totalGrade]
       : []
   );
 };

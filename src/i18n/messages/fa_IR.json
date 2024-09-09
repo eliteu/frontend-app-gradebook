@@ -38,6 +38,7 @@
   "gradebook.GradesTab.usersVisibilityLabel'": "نمایش {filteredUsers} از کل {totalUsers} یادگیرنده",
   "gradebook.GradesView.editFilterLabel": "ویرایش فیلترها",
   "gradebook.GradesView.table.headings.email": "نشانی رایانامه",
+  "gradebook.GradesView.table.headings.lastUpdated": "Last Updated",
   "gradebook.GradesView.table.headings.totalGrade": "نمره کل (%)",
   "gradebook.GradesView.table.headings.username": "نام کاربری",
   "gradebook.GradesView.table.labels.studentKey": " کلید یادگیرنده*",
