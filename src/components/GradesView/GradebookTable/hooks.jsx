@@ -29,6 +29,8 @@ export const useGradebookTableData = () => {
       label = <LabelReplacements.MastersOnlyLabelReplacement {...messages.emailHeading} />;
     } else if (heading === Headings.fullName) {
       label = <LabelReplacements.MastersOnlyLabelReplacement {...messages.fullNameHeading} />;
+    } else if (heading === Headings.lastUpdated) {
+      label = <LabelReplacements.MastersOnlyLabelReplacement {...messages.lastUpdatedHeading} />;
     } else {
       label = heading;
     }
