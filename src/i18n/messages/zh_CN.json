@@ -35,7 +35,7 @@
   "gradebook.GradesView.EditModal.Overrides.dateHeader": "日期",
   "gradebook.GradesView.EditModal.Overrides.graderHeader": "评分者",
   "gradebook.GradesView.EditModal.Overrides.reasonHeader": "原因",
-  "gradebook.GradesTab.usersVisibilityLabel'": "Showing {filteredUsers} of {totalUsers} total learners",
+  "gradebook.GradesTab.usersVisibilityLabel'": "显示 {totalUsers} 个总学员中的 {filteredUsers} 个",
   "gradebook.GradesView.editFilterLabel": "编辑过滤器",
   "gradebook.GradesView.table.headings.email": "电子邮件",
   "gradebook.GradesView.table.headings.lastUpdated": "最新成绩时间",
