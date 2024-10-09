@@ -112,7 +112,7 @@ export const headingMapper = (category, label = 'All') => {
     lastUpdated,
     totalGrade,
   } = Headings;
-  const filteredLabels = (entry) => entry.filter(filter).map((s, index) => s.subsection_name);
+  const filteredLabels = (entry) => entry.filter(filter).map((s, index) => `${s.subsection_name}`);
   return (entry) => (
     entry
       ? [username, fullName, email, lastUpdated, ...filteredLabels(entry), totalGrade]

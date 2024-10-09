@@ -47,7 +47,7 @@ export const useGradebookTableData = () => {
     [Headings.totalGrade]: `${roundGrade(entry.percent * 100)}${getLocalizedPercentSign()}`,
     ...entry.section_breakdown.reduce((acc, subsection, index) => ({
       ...acc,
-      [subsection.subsection_name]: <GradeButton {...{ entry, subsection }} />,
+      [`${subsection.subsection_name}`]: <GradeButton {...{ entry, subsection }} />,
     }), {}),
   });
 
