@@ -34,7 +34,7 @@ export const useGradebookTableData = () => {
     } else {
       label = heading;
     }
-    return { Header: label, accessor: heading };
+    return { Header: label, accessor: String(heading) };
   };
 
   const mapRows = entry => ({
@@ -47,7 +47,7 @@ export const useGradebookTableData = () => {
     [Headings.totalGrade]: `${roundGrade(entry.percent * 100)}${getLocalizedPercentSign()}`,
     ...entry.section_breakdown.reduce((acc, subsection, index) => ({
       ...acc,
-      [String(subsection.subsection_name)]: <GradeButton {...{ entry, subsection }} />,
+      [subsection.subsection_name]: <GradeButton {...{ entry, subsection }} />,
     }), {}),
   });
 
