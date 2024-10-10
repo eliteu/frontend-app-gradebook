@@ -34,7 +34,7 @@ export const useGradebookTableData = () => {
     } else {
       label = heading;
     }
-    return { Header: label, accessor: row => row[heading] };
+    return { Header: label, accessor: heading };
   };
 
   const mapRows = entry => ({
